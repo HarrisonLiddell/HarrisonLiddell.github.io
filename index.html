@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Liddell's Portfolio Site | Home</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <meta name="description" content="This is Harrison Liddells portfolio site">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Websites, Robotics, Artificial Intelligence, Harrison Liddell">
+    <meta name="author" content="Harrison Liddell">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo"><img src="Images/logo.png"></a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello,<br>I'm <span>Harrison W Liddell</span></h2>
+            <div id="main">
+                <img src="Images/me.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda odio velit corporis quisquam, asperiores obcaecati nihil cupiditate reprehenderit eum, ea consequuntur eos voluptates libero animi veniam maxime sit tempora.</p>
+            </div>
+            <a href="#">Know More</a>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/harrison26262"><img src="Images/facebook.png"></a></li>
+            <li><a href="https://twitter.com/Harrison262626"><img src="Images/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/harrison2626/"><img src="Images/insta.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services I Do</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
