@@ -224,6 +224,11 @@ header #toggle:after
     font-weight: 600;
 }
 
+.hover
+{
+    font-weight: 700;
+}
+
 .content #services
 {
     display: flex;
@@ -586,6 +591,7 @@ header
 .banner h2 
 {
     font-size: 1.8em;
+    margin-bottom: -40px;
 }
 
 .banner .content p,
@@ -739,5 +745,11 @@ max-height: 110px;
     text-decoration: none;
     font-size: 0.6em;
     font-weight: 600;
+}
+
+.banner .content p,
+.banner .content a
+{
+    font-size: 0.7em;
 }
 }
