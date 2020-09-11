@@ -682,6 +682,11 @@ header
     font-weight: 600;
 }
 
+.slideshow-p img
+{
+max-height: 110px;
+}
+
 }
 
 @media (max-width:675px)
