@@ -591,7 +591,6 @@ header
 .banner h2 
 {
     font-size: 1.8em;
-    margin-bottom: -40px;
 }
 
 .banner .content p,
@@ -752,4 +751,5 @@ max-height: 110px;
 {
     font-size: 0.7em;
 }
+
 }
