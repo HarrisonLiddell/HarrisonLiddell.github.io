@@ -153,6 +153,7 @@ header #toggle:after
     margin-top: 50px;
 }
 
+
 .content h2
 {
     color: #000;
@@ -170,7 +171,7 @@ header #toggle:after
     display: inline-flex;
 }
 
-.content img
+.content img#pfp
 {
     border-radius: 50%;
     height: 200px;
@@ -181,12 +182,17 @@ header #toggle:after
 
 .content p
 {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #000;
     font-weight: 500;
 }
 
-.content a
+.content h3
+{
+    font-size: 1.3em;
+}
+
+.content a.home
 {
     position: relative;
     display: inline-block;
@@ -200,10 +206,22 @@ header #toggle:after
     font-weight: 500;
 }
 
-.content a:hover
+.content a:hover.home
 {
     background: red;
     color: #fff;
+}
+
+.content a.Certificates
+{
+    color: red;
+    text-decoration: none;
+}
+
+.content a:hover.Certificates
+{
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .content #services
@@ -230,6 +248,36 @@ header #toggle:after
 .content #services .service p
 {
     text-align: center;
+}
+
+.content .links
+{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.content .links:hover
+{
+    text-decoration: underline;
+    color: red;
+    font-weight: 800;
+}
+
+.content .email
+{
+    font-weight: 700;
+}
+
+.content .email:hover
+{
+    font-weight: 800;
+    color: red;
+}
+
+.contactimg
+{
+    margin-left: 20%;
 }
 
 .sci
@@ -269,6 +317,206 @@ header #toggle:after
     mix-blend-mode: difference;
 }
 
+/* CSS for manual slider in Services page */
+
+.mySlides {display:none}
+
+.slideshow-container{
+    width: 80vw;
+    height: 100vh;
+    position: relative;
+    margin: -10px auto auto auto;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    border: 3px solid #000;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(255, 0, 0, 0.74);
+}
+
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#dots
+{
+    margin-left: 36vw;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s
+}
+
+.slideshow-text{
+    position: absolute;
+    top:  10%;
+    left: 5%;
+    color: black;
+}
+
+.slideshow-p
+{
+    position: absolute;
+    top: 15%;
+    max-width: 90%;
+    margin: 5%;
+}
+
+
+@-webkit-keyframes fade{
+    from{opacity:.4}
+    to{opacity:1}
+}
+
+@keyframes fade{
+    from{opacity:.4}
+    to{opacity:1}
+}
+
+@media only screen and (max-width: 768px) {
+    .prev, .next, .text {font-size:11px}
+}
+
+@media (max-width:725px)
+{
+    .slideshow-text{
+        position: absolute;
+        top:  10%;
+        left: 5%;
+        color: black;
+    }
+    
+    .slideshow-p
+    {
+        position: absolute;
+        top: 20%;
+        max-width: 90%;
+        margin: 5%;
+    }
+}
+
+@media (max-width:426px)
+{
+    #dots
+    {
+        margin-left: 30vw;
+    } 
+
+    .contactimg
+    {
+        display: none;
+    }
+}
+/*close of user controlled image slider code*/
+
+/*Image with an overlay containing text*/
+.imgoverlay{
+    position: relative;
+    width:50%;
+}
+
+.image{
+    opacity: 1;
+    display: block;
+    min-width: 25vw;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 2em;
+    margin: 20px;
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.imgoverlay:hover .image{
+    opacity: 0.3;
+}
+
+.imgoverlay:hover .middle{
+    opacity: 1;
+}
+
+.text{
+    background-color: red;
+    color: white;
+    font-family: tahoma;
+    font-size: 1em;
+    padding: 0.5em;
+    font-weight: 500;
+}
+
+#web1
+{
+    display: inline-flex;
+    width: 80vw;
+}
+
+#web1 p{
+    margin-left: 50px;
+}
+
+.content a.portfolio
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 0.6em;
+    font-weight: 600;
+}
+
+.content a:hover.portfolio
+{
+    background: rgb(94, 0, 0);
+    color: #fff;
+}
+
+
+
 @media (min-width: 1045px)
 {
 
@@ -282,6 +530,34 @@ header #toggle:after
     margin-top: 30px;
 }
 
+
+
+}
+
+@media (min-width:768px) and (max-width:1024px)
+{
+    .text{
+        background-color: red;
+        color: white;
+        font-family: tahoma;
+        font-size: 0.7em;
+        padding: 0.5em;
+        font-weight: 500;
+        margin-top: -50px;
+    }
+
+    .content a.portfolio
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 0.6em;
+    font-weight: 600;
+}
 }
 
 @media (max-width: 835px)
@@ -356,7 +632,107 @@ header
 .content #services
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: columns;
 }
 
+.prev
+{
+    margin-left: -7%;
+    padding: 6px;
+}
+
+.next
+{
+    margin-right: -7%;
+    padding: 6px;
+}
+
+
+#web1
+{
+    display: block;
+    width: 100%;
+}
+
+#web1 p{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.text{
+    background-color: red;
+    color: white;
+    font-family: tahoma;
+    font-size: 0.7em;
+    padding: 1.5em;
+    font-weight: 500;
+}
+
+.content a.portfolio
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    padding: 10px 10px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+}
+
+@media (max-width:675px)
+{
+    #web1
+    {
+        display: block;
+        width: 80vw;
+    } 
+
+    .image
+    {
+        margin-left: 20% ;
+        min-width: 60vw;
+    }
+
+    .text{
+        background-color: red;
+        color: white;
+        font-family: tahoma;
+        font-size: 0.6em;
+        padding: 0.5em;
+        font-weight: 500;
+        width: 200%;
+        margin-left: -70%;
+    }
+
+    .middle{
+        transition: .5s ease;
+        max-width: 80px;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        text-align: center;
+        margin-left: 50%;
+    }
+
+    .content a.portfolio
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    padding: 5px 5px;
+    width: 60px;
+    text-decoration: none;
+    font-size: 0.6em;
+    font-weight: 600;
+}
 }

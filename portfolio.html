@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Liddell's Portfolio Site | Portfolio</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <meta name="description" content="This is Harrison Liddells portfolio site">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Websites, Robotics, Artificial Intelligence, Harrison Liddell">
+    <meta name="author" content="Harrison Liddell">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="index.html" class="logo"><img src="Images/logo.png"></a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>My Portfolio</h2>
+            <br>
+            <h3>Websites</h3>
+            <div id="web1">
+                <div class="imgoverlay">
+                    <img src="images/bbg.png" alt="Grey Squirrel" title="Hover over me" class="image" style="width:100%;">
+                    <div class="middle">
+                        <div class="text">Bathrooms By Gary <br><a class="portfolio" href="/BathroomsByGary/index.html">Click to view</a></div>
+                    </div>
+                </div>
+                <p>Bathrooms By Gary is the first website I programmed whilst i was going through college and learning more and more new programming skills. This website was made for my uncles business where he does joinery, plumbing, electrics, bathroom fitting and kitchen fittings(This site uses HTML, CSS and some Javascript elements(the main one being a slider on the index page)).</p>
+            </div>
+            <br>
+            <h3>Robotics Code</h3>
+            <p>More to come...</p>
+            <br>
+            <h3>Programs</h3>
+            <p>More to come...</p>
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services I Do</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

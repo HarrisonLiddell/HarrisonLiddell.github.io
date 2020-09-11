@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Liddell's Portfolio Site | Services</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <meta name="description" content="This is Harrison Liddells portfolio site">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Websites, Robotics, Artificial Intelligence, Harrison Liddell">
+    <meta name="author" content="Harrison Liddell">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="index.html" class="logo"><img src="Images/logo.png"></a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div id="services" class="content">
+            <h2>Services i do</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">	
+                    <h1 class="slideshow-text">Web Development</h1>
+                    <p class="slideshow-p">
+                        I have had 3/4 years experience programming websites using HTML, CSS and Javascripts and most of the teaching for this i have done myself with a bit of help from college lessons. My website development process starts by taking the all the graphical elements (colours, fonts, layout, images) defined in the design process and coding them using web industry standards (HTML5, CSS3, JS). This is typically done by first coding the index/home page, followed by templates for the other pages that the client has requested, after doing this I would start to add all the Javascript elements in once I am happy with the stylesheets. Then finally i would make sure that the site works on most site engines and devices using live servers and inspect elements. When the website is ready for review i would upload the site to a github page so that the client can virtually see that the page is working and up to there standard.
+                        <br>
+                        <br>
+                        All of the websites that I have created have been built using Visual studio code and have all been made by my own coding techniques and templates.
+                    </p>
+                </div>
+        
+                <div class="mySlides fade">
+                    <h1 class="slideshow-text">Spreadsheets or Databases</h1>
+                    <p class="slideshow-p">
+                        All of my Spreadsheet and database understanding and knowledge came from being taught in College and going through all the Microsoft Office Specialist exams and tests that i did and recieved the expert certificates for(you can view all my MOS certificates from the link in the about me page!!).
+                        <br>
+                        <br>
+                        To develop my Spreadsheets and databases I always use either Microsoft Access or Excel as I feel that these applications give the best features in order to develop the best documents.
+                        <br>
+                        <br>
+
+                        <img src="images/excel.png">
+                        <img src="images/access.png">
+                    </p>
+                        
+                </div>
+        
+                <div class="mySlides fade">
+                    <h1 class="slideshow-text">Robotics</h1>	
+                    <p class="slideshow-p">
+                        More info to come...
+                    </p>
+                </div>
+
+                <div class="mySlides fade">
+                    <h1 class="slideshow-text">Artificial Intelligence</h1>	
+                    <p class="slideshow-p">
+                        More info to come...
+                    </p>
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            </div>
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#">Services I Do</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        
+        // Javascript for navigation menu
+        
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        // Javascript for manual slider for services page
+
+        var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+		}
+    </script>
+</body>
+</html>

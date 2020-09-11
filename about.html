@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Liddell's Portfolio Site | About</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <meta name="description" content="This is Harrison Liddells portfolio site">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Websites, Robotics, Artificial Intelligence, Harrison Liddell">
+    <meta name="author" content="Harrison Liddell">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="index.html" class="logo"><img src="Images/logo.png"></a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Between 2013-2018, I studied my GCSE's at St Peter and Paul Catholic College in Widnes. In which i recieved the grades of 1A, 3B’s, 4C’s (including English and math’s). During these years i picked up many skills towards Product Design, including the understanding and knowledge of CAD/CAM. From these years at my High School I was orginally wanting to go into contruction and joinery. Although over the years my family told me that I am great at using IT so why don't I go on and study a course doing computing, in which I did!</p>
+            <p>Between 2018-2020, I go into St Helens college and started my studies doing a BTEC Level 3 Extended Diploma in Information Technology. In which I recieved Distinction<sup>*</sup>,Distinction<sup>*</sup>,Distinction<sup>*</sup>. From my studies at St Helens college I have developed many skills and a wider knowledge and understanding towards IT. This included that i now know how to develop a spreadsheet, develop a database, design and program a website and develop a basic python program. Through these years I also did all my exams to recieve my Microsoft Office Specialist Master Certificates. <a class="Certificates" href="https://www.youracclaim.com/users/harrison-liddell">View Here!</a></p>
+            <p>I have now started studying at the University of my choice Edge Hill and I have started studying a Bachelors in Robotics and Artificial Intelligence.</p>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/harrison26262"><img src="Images/facebook.png"></a></li>
+            <li><a href="https://twitter.com/Harrison262626"><img src="Images/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/harrison2626/"><img src="Images/insta.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="services.html">Services I Do</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
